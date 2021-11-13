@@ -9,5 +9,6 @@ public class BeerstockApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BeerstockApplication.class, args);
 	}
+	
 
 }
