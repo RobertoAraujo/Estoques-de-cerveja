@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
@@ -15,14 +14,14 @@ import static springfox.documentation.builders.RequestHandlerSelectors.*;
 
 @Configuration
 @EnableSwagger2
-public class SwaggerConfig {
+public class Config {
 
     private static final String BASE_PACKAGE = "one.digitalinnovation.beerstock.controller";
-    private static final String API_TITLE = "Beer Stock API";
-    private static final String API_DESCRIPTION = "REST API for beer stock management";
-    private static final String CONTACT_NAME = "Rodrigo Peleias";
-    private static final String CONTACT_GITHUB = "https://gtihub.com/rpeleias";
-    private static final String CONTACT_EMAIL = "rodrigo.peleis@gmail.com";
+    private static final String API_TITLE = "API de Estoque de Bebidas";
+    private static final String API_DESCRIPTION = "API REST para gerenciamento de estoque de cerveja";
+    private static final String CONTACT_NAME = "Roberto Araujo de Moraes";
+    private static final String CONTACT_GITHUB = "https://gtihub.com/RobertoAraujo";
+    private static final String CONTACT_EMAIL = "endriosrobert@gmail.com";
 
     @Bean
     public Docket api() {
